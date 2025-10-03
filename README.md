@@ -72,7 +72,7 @@ Expected output:
 ## 📸 Jenkins Build Screenshot
 Successful Jenkins build log:
 
-![Jenkins Build Success](cjenkins-success.png)
+![Jenkins Build Success](jenkins-success.png)
 
 ![Jenkins Console Output](jenkins-build.png)
 
