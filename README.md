@@ -34,35 +34,34 @@ jenkins-hello-java-maven/
 ├── README.md
 └── jenkins-build-success.png # Screenshot of Jenkins console output
 
-
 ---
 
 ## 🚀 Setup & Run Locally
 
 ### 1️⃣ Clone the repo
-```bash
+``bash
 git clone https://github.com/Kshitija-0710/jenkins-hello-java-maven.git
-cd jenkins-hello-java-maven
+cd jenkins-hello-java-maven``
 
-### 2️⃣ Build with Maven
-mvn clean package
-
+### 2️⃣ Build with Maven 
+``bash
+mvn clean package``
 Expected output:
 
-[INFO] BUILD SUCCESS
-
-
+``csharp
+[INFO] BUILD SUCCESS``
 The compiled JAR will be inside:
 
-target/hello-1.0.jar
-
+``bash
+target/hello-1.0.jar``
 ### 3️⃣ Run the program
-java -cp target/hello-1.0.jar HelloWorld
-
+``bash
+java -cp target/hello-1.0.jar HelloWorld``
 
 Expected output:
+``Hello, Jenkins + Maven!``
 
-Hello, Jenkins + Maven!
+---
 
 ## 📸 Jenkins Build Screenshot
 Successful Jenkins build log:
@@ -71,13 +70,17 @@ Successful Jenkins build log:
 ![Jenkins Console Output](jenkins-build.png)
 ![JAR Run Success](cli-output.png)
 
-## 📥 Download Artifact
+---
 
+## 📥 Download Artifact
 You can directly download the built JAR from this repository:
 👉 Download hello-1.0.jar
 
-## 📌 What I Learned
+(If target/hello-1.0.jar is not pushed, you can upload it under GitHub → Releases → Attach binaries.)
 
+---
+
+## 📌 What I Learned
 How to install & configure Jenkins on AWS EC2
 
 Adding Maven in Jenkins Global Tool Configuration
@@ -89,7 +92,6 @@ Running Maven build (mvn clean package) via Jenkins
 Checking Jenkins console logs for BUILD SUCCESS
 
 ## 💡 Interview Prep Q&A
-
 1. What is Jenkins?
 Jenkins is an open-source automation server used for CI/CD, automating build, test, and deployment.
 
@@ -114,7 +116,7 @@ Manage Jenkins → Global Tool Configuration (Maven, JDK, Git, etc.).
 7. How do you debug a failed Jenkins build?
 Check console logs, reproduce build locally with mvn clean package, check dependencies, fix environment/config issues.
 
-##  📜 License
-
+## 📜 License
 This project is licensed under the MIT License – feel free to use and modify.
 
+✨ Happy CI/CD Learning! 🚀
